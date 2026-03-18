@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="cubeGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8345A"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <!-- 3D Cube wireframe -->
+  <!-- Front face -->
+  <polygon points="80,120 320,120 320,360 80,360" stroke="url(#cubeGrad)" stroke-width="6" fill="none"/>
+  <!-- Back face -->
+  <polygon points="140,60 380,60 380,300 140,300" stroke="url(#cubeGrad)" stroke-width="4" fill="none" opacity="0.5"/>
+  <!-- Connecting edges -->
+  <line x1="80" y1="120" x2="140" y2="60" stroke="url(#cubeGrad)" stroke-width="5" opacity="0.7"/>
+  <line x1="320" y1="120" x2="380" y2="60" stroke="url(#cubeGrad)" stroke-width="5" opacity="0.7"/>
+  <line x1="320" y1="360" x2="380" y2="300" stroke="url(#cubeGrad)" stroke-width="4" opacity="0.4"/>
+</svg>

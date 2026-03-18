@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8345A"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#E8345A"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect x="20" y="20" width="460" height="460" rx="80" fill="white"/>
+
+  <!-- 3D Cube wireframe centered -->
+  <g transform="translate(60, 50)">
+    <!-- Front face -->
+    <polygon points="80,100 300,100 300,320 80,320" stroke="url(#grad1)" stroke-width="8" fill="none"/>
+    <!-- Back face -->
+    <polygon points="130,50 350,50 350,270 130,270" stroke="url(#grad1)" stroke-width="5" fill="none" opacity="0.45"/>
+    <!-- Connecting edges -->
+    <line x1="80" y1="100" x2="130" y2="50" stroke="url(#grad1)" stroke-width="7" opacity="0.65"/>
+    <line x1="300" y1="100" x2="350" y2="50" stroke="url(#grad1)" stroke-width="7" opacity="0.65"/>
+    <line x1="300" y1="320" x2="350" y2="270" stroke="url(#grad1)" stroke-width="5" opacity="0.35"/>
+  </g>
+
+  <!-- Pole dancer silhouette centered in cube -->
+  <g fill="url(#grad2)" transform="translate(155, 65) scale(0.78)">
+    <!-- Pole -->
+    <rect x="148" y="0" width="4" height="480" fill="url(#grad2)" opacity="0.5"/>
+    <!-- Head -->
+    <circle cx="160" cy="65" r="20"/>
+    <!-- Hair -->
+    <path d="M 164 48 Q 185 25 178 55 Q 190 35 182 62" opacity="0.8"/>
+    <!-- Torso -->
+    <path d="M 146 84 C 137 105 132 140 143 175 L 157 175 C 163 140 165 105 159 84 Z"/>
+    <!-- Right arm up to pole -->
+    <path d="M 146 92 C 137 75 143 52 149 30 L 155 32 C 151 54 146 78 153 92 Z"/>
+    <!-- Left arm extended -->
+    <path d="M 159 98 C 173 86 195 80 220 92 L 217 98 C 195 90 175 94 162 104 Z"/>
+    <!-- Right leg on pole -->
+    <path d="M 143 173 C 135 205 126 245 138 290 C 144 315 150 340 147 375 L 156 377 C 160 340 157 313 149 288 C 138 250 145 210 153 177 Z"/>
+    <!-- Left leg extended -->
+    <path d="M 154 175 C 168 210 192 255 220 300 C 232 322 244 350 262 385 L 269 380 C 252 350 240 320 228 298 C 200 253 176 210 162 177 Z"/>
+    <!-- Toe point -->
+    <path d="M 262 385 L 274 395 L 269 380 Z"/>
+    <!-- Hand grip -->
+    <ellipse cx="151" cy="28" rx="7" ry="5"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" fill="none">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#E8345A"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <!-- Pole -->
+  <line x1="150" y1="0" x2="150" y2="500" stroke="url(#bodyGrad)" stroke-width="4" opacity="0.6"/>
+  <!-- Dancer silhouette - stylized pole dancer -->
+  <g fill="url(#bodyGrad)">
+    <!-- Head -->
+    <circle cx="160" cy="65" r="18"/>
+    <!-- Hair flowing -->
+    <path d="M 162 50 Q 180 30 175 55 Q 185 40 178 60" opacity="0.8"/>
+    <!-- Torso -->
+    <path d="M 148 82 C 140 100 135 130 145 160 L 155 160 C 160 130 162 100 158 82 Z"/>
+    <!-- Right arm (holding pole, reaching up) -->
+    <path d="M 148 90 C 140 75 145 55 150 35 L 154 36 C 152 56 148 76 153 90 Z"/>
+    <!-- Left arm (extended out) -->
+    <path d="M 158 95 C 170 85 190 80 210 90 L 208 95 C 190 88 172 92 160 100 Z"/>
+    <!-- Right leg (wrapped around pole) -->
+    <path d="M 145 158 C 138 185 130 220 140 260 C 145 280 150 300 148 330 L 155 332 C 158 300 155 278 148 258 C 140 225 146 190 152 162 Z"/>
+    <!-- Left leg (extended, pointed toe) -->
+    <path d="M 152 160 C 165 190 185 230 210 270 C 220 288 230 310 245 340 L 250 336 C 235 308 224 285 214 268 C 190 228 170 190 158 162 Z"/>
+    <!-- Pointed toe detail -->
+    <path d="M 245 340 L 255 348 L 250 336 Z"/>
+    <!-- Hand gripping pole -->
+    <ellipse cx="151" cy="33" rx="6" ry="4"/>
+  </g>
+</svg>
